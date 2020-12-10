@@ -675,10 +675,7 @@ class _TableCalendarState extends State<TableCalendar>
       if (children.length > 1) {
         content = Stack(
           alignment: widget.calendarStyle.markersAlignment,
-          children: children,
-          clipBehavior: widget.calendarStyle.canEventMarkersOverflow
-              ? Clip.none
-              : Clip.hardEdge,
+          children: children
         );
       }
     }
